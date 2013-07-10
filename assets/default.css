@@ -1,0 +1,39 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#app 
+{
+    width: 600px;
+    min-width: 400px;
+    margin: 40px auto;
+    background-color: #def;
+}
+
+#app header h1
+{
+    background-color: #ced;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+#newtask
+{
+    width: 80%;
+    margin: 0 10px;
+}
+
+#app footer
+{
+    background-color: #cee;
+    padding: 20px;
+    color: #333;
+    font-size: .8em;
+}
+
+#app li
+{
+    margin: 2px;
+}
