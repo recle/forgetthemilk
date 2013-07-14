@@ -10,13 +10,34 @@
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
     <script src="js/common.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+
+            $("#app").hide();
+            $("#login").show();
+
+            ftm.getToken(function() {
+                $("#login").hide();
+                $("#app").show();
+                $("#user").text(ftm.user);            
+            });
+                
+
+        });
+
+    </script>
 </head>
 
 <body>
+    <div id="login">
+        Logging in to Remember the Milk...
+    </div>
+
     <div id="app">
         <header>
             <h1>Forget the Milk</h1>
-            
+            <p id="user"></p>
         </header>
         <section>
             <input id="newtask" placeholder="Add a new task here" autofocus></input>
